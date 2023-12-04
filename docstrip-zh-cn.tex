@@ -652,12 +652,12 @@ shell 脚本或其他语言中的程序。对于他们来说，\ds\ 的注释去
 或者使用 |\nopreamble| 和 |\nopostamble|。
 
 
-\subsection{Meta注释}
+\subsection{Meta注释（元注释）}
 你可以通过重新定义 |\MetaPrefix| 来更改用于将元注释放入输出文件中的前缀。它的默认值是 |\DoubleperCent|。
 前文使用了 |\MetaPrefix| 在 |\declarepreamble| 时的当前值，而源文件中的元注释使用了在 |\generate| 时的当前值。
 请注意，这意味着你不能同时使用不同的 |\MetaPrefix| 生成两个文件。
 
-\subsection{Verbatim模式}
+\subsection{Verbatim模式（逐字模式）}
 如果你的编程语言使用了某种结构可能会与 \ds\ 产生严重干扰（例如第一列中的百分号），你可能需要一种方式来阻止它被剥离。
 为此，\ds\ 提供了“逐字模式”。
 
