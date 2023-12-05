@@ -220,7 +220,7 @@
 等等。
 
 \DescribeMacro{\showdirectory}
-用于在消息中显示目录名称。如果某个标签未定义，它会扩展为 |UNDEFINED (label is ...)|，否则为目录名称。
+用于在消息中显示目录名称。如果某个标签未定义，它会扩展为 |UNDEFINED| |(label is ...)|，否则为目录名称。
 对于每个安装脚本，在启动时显示将要使用的所有目录列表并要求用户确认可能是个不错的主意。
 
 上述宏由宏包/安装脚本作者使用。以下宏由系统管理员在配置文件 |docstrip.cfg| 中使用，用于描述其本地目录结构。
@@ -318,7 +318,7 @@
 \DescribeMacro{\input}
 所有 \ds{} 批处理文件应以以下行开始：|\input docstrip|
 
-不要使用 \LaTeX\ 语法 |\input{docstrip}|，因为批处理文件可能与 plain~\TeX\ 或 ini\TeX\ 一起使用。您可能会发现旧批处
+不要使用 \LaTeX\ 语法 |\input{docstrip}|，因为批处理文件可能与 plain \TeX\ 或 ini\TeX\ 一起使用。您可能会发现旧批处
 理文件始终在输入之前有一行 |\def\batchfile{|\meta{filename}|}|。虽然仍然支持这种用法，但现在已不鼓励使用，因为它会导致
 \TeX\ 重新输入相同的文件，消耗了它有限的输入流之一。
 
@@ -415,9 +415,9 @@
 
 \DescribeMacro{\askforoverwritetrue}
 \DescribeMacro{\askforoverwritefalse}
-这些宏指定了如果要生成的文件已经存在时应该发生什么。如果 |\askforoverwritetrue| 处于激活状态（默认情况下），会询问用户
-是否应该覆盖文件。但是如果已经使用了 |\askforoverwritefalse|，则现有文件将会被静默地覆盖。这些开关是局部的，可以在文件
-的任何地方发出，甚至在 |\generate| 子句内部（但在 |\file| 之间）。
+这些宏指定了如果要生成的文件已经存在时应该发生什么。如果\hfil\break |\askforoverwritetrue| 处于激活状态（默认情况下），
+会询问用户是否应该覆盖文件。但是如果已经使用了 |\askforoverwritefalse|，则现有文件将会被静默地覆盖。这些开关是局部的，
+可以在文件的任何地方发出，甚至在 |\generate| 子句内部（但在 |\file| 之间）。
 
 \DescribeMacro{\askonceonly}
 你可能不想在批处理文件中设置 |\askforoverwritefalse|，因为这意味着始终可以悄悄地覆盖其他人的文件。然而对于大型安装
